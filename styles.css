@@ -28,5 +28,65 @@ body {
 	
 	
 
+}
+.sidebar{
+	background-color: #D3D3D3;
 
+	
+	
+}
+
+.fa {
+	text-align: left;
+}
+h2{
+	text-align: left;
+}
+h2.maincontent{
+	
+	text-align: center;
+}
+
+
+.mainlayout {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+	'main menu menu menu';
+   
+  grid-gap: 10px;
+  padding: 10px;
+}
+.mainlayout > div {
+  text-align: center;
+  
+  font-size: 30px;
+}
+
+.header { grid-area: header; }
+.maincontent { grid-area: menu; }
+.sidebar { grid-area: main; }
+
+@media (max-width: 600px) {
+  .mainlayout {
+    grid-template-areas: 
+    'header header header' 
+    'main main main main ' 
+    'menu menu menu menu' ;
+	
+  }
+}
+p{
+	text-align:left;
+	
+}
+
+h3{
+	text-align:left;
+	
+}
+
+li{
+	text-align:left;
+}
 
